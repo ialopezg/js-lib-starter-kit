@@ -1,25 +1,35 @@
 {
   "name": "js-lib-starter-kit",
   "version": "0.0.1",
-  "description": "JavaScript Library Starter Kit",
+  "description": "JavaScript Library Starter Kit for modern apps and libraries.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint $PWD/'src/**/*.js'",
+    "lint:fix": "prettier-eslint $PWD/'src/**/*.js' --write"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ialopezg/js-lib-starter-kit.git"
   },
   "keywords": [
-    "starter-kit",
-    "projects",
+    "javascript",
     "library",
-    "javascript"
+    "starter",
+    "kit"
   ],
   "author": "Isidro A. Lopez G. <me@ialopezg.com> (https://ialopezg.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ialopezg/js-lib-starter-kit/issues"
   },
-  "homepage": "https://github.com/ialopezg/js-lib-starter-kit#readme"
+  "homepage": "https://github.com/ialopezg/js-lib-starter-kit#readme",
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-config-standard": "^16.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "prettier-eslint": "^11.0.0",
+    "prettier-eslint-cli": "^5.0.0"
+  }
 }
