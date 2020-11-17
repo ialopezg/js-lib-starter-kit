@@ -4,6 +4,8 @@
   "description": "JavaScript Library Starter Kit for modern apps and libraries.",
   "main": "index.js",
   "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "rollup -c",
     "lint": "eslint $PWD/'src/**/*.js'",
     "lint:fix": "prettier-eslint $PWD/'src/**/*.js' --write"
   },
@@ -35,6 +37,10 @@
   },
   "homepage": "https://github.com/ialopezg/js-lib-starter-kit#readme",
   "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@rollup/plugin-babel": "^5.2.1",
+    "@rollup/plugin-node-resolve": "^10.0.0",
     "eslint": "^7.13.0",
     "eslint-config-standard": "^16.0.1",
     "eslint-plugin-import": "^2.22.1",
@@ -43,6 +49,9 @@
     "husky": "^4.3.0",
     "lint-staged": "^10.5.1",
     "prettier-eslint": "^11.0.0",
-    "prettier-eslint-cli": "^5.0.0"
+    "prettier-eslint-cli": "^5.0.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.33.2",
+    "rollup-plugin-terser": "^7.0.2"
   }
 }
